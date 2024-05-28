@@ -1,0 +1,256 @@
+<!-- https://github.com/michalsnik/aos For Animation Navbar Fade -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav  data-aos="fade-right">
+    <ul>
+      <li><a href="#">PortFolio</a></li>
+      <li class="hideOnMobile"><a href="#Home">Home</a></li>
+      <li class="hideOnMobile"><a href="#AboutUS">About</a></li>
+      <li class="hideOnMobile"><a href="#Contact">Contact</a></li>
+      <li class="hideOnMobile"><a href="#services">Services</a></li>
+      <li class="hideOnMobile"><a href="#project">Project</a></li>
+      <li class="hideOnMobile"><a href="../Login.html"><button type="button" class="btn btn-primary" style="list-style: none;" >Login</button></a></li>
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+    </ul>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#AboutUS">About</a></li>
+      <li><a href="#Contact">Contact</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#project">Project</a></li>
+      <li><a href="../Login.html"></a><button type="button" onclick="Login()" class="btn btn-primary" style="margin-left: 20px; list-style: none;">Login</button></a></li>
+    </ul>
+
+  </nav>
+  
+  <section class="home" id="Home" data-aos="fade-left">
+    <div class="content">
+        <h2>Hi, I'm <span>Muhammad Hassan Ali</span> Fronted Developer</h2>
+        
+        <p>Join our team as a frontend developer and be part of creating captivating user experiences. You'll collaborate with design and backend teams to implement polished interfaces using HTML, CSS, and JavaScript. If you're passionate about innovation and possess strong frontend skills, we want to hear from you!</p>
+        <div class="btn-group">
+          <button type="button"><a href="#AboutUS">About Me</a> </button>
+        </div>
+      
+    </div>
+</section>
+
+<section class="about-us" id="AboutUS">
+    <div class="about" data-aos="fade-down-right">
+        <img src="./Hassan.jpg.jpeg" class="pic">
+      
+      <div class="text">
+        <h2>About Me</h2>
+        <h5>Front-end Developer & <span>Designer</span></h5>
+          <p>A passionate Frontend Developer Intern with a drive to create exceptional user experiences through the use of HTML, CSS, and JavaScript. Seeking a position to leverage strong technical and problem-solving skills and extensive web development knowledge to achieve organizational efficiency, reduce page load speeds, and optimize user interfaces.</p>
+        <div class="data">
+        <a href="#" class="hire">Hire Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <div class="container" id="services" data-aos="fade-up-left">
+
+    <h1 class="heading">our services</h1>
+
+    <div class="box-container">
+
+        <div class="box" data-aos="fade-right">
+            <img src="./icon-1.png" alt="">
+            <h3>HTML 5</h3>
+            <p>As part of my HTML services, I ensure that your website's structure is solid, semantic, and accessible.
+
+            </p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box" data-aos="fade-left">
+            <img src="./icon-2.png" alt="">
+            <h3>CSS 3</h3>
+            <p>. With my CSS services, I'll make sure your website looks stunning and visually appealing. </p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box" data-aos="fade-right">
+            <img src="./icon-3.png" alt="">
+            <h3>JavaScript</h3>
+            <p>. As part of my JavaScript services, I'll enhance your website's user experience by incorporating features like form validation, interactive elements, and smooth transitions</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box" data-aos="fade-left">
+            <img src="./Bootstrap.jpg" alt="">
+            <h3>Bootstrap</h3>
+            <p> With my Bootstrap services, I'll utilize its grid system, components and utility classes to create a modern and responsive design for your website. </p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+            <div class="box" data-aos="fade-right">
+            <img src="./icon-6.png" alt="">
+            <h3>React.js</h3>
+            <p> With my React.js services, I'll create reusable components that encapsulate your website's UI elements and logic.Whether you need a dynamic navigation menu, a complex data visualization, or an interactive form</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="main" id="project" data-aos="fade-right">
+    <h1 class="heading">Our Project</h1>
+    <!--cards -->
+
+    <div class="card" data-aos="fade-left">
+        <div class="image">
+            <img src="./Image 1.jpg" style="height: 220px; width: 320px;">
+            <div class="overlay">
+                <div class="overlay-content">Web Design</div>
+            </div>
+        </div>
+    </div>
+    <!--cards -->
+
+    <div class="card" data-aos="fade-right">
+        <div class="image">
+            <img src="./Image 3.jpg" style="height: 220px; width: 320px;">
+            <div class="overlay">
+                <div class="overlay-content">Web Design</div>
+            </div>
+        </div>
+    </div>
+    <div class="card" data-aos="fade-left">
+     <div class="image">
+         <img src="./Image 7.jpg" style="height: 220px; width: 320px;">
+         <div class="overlay">
+             <div class="overlay-content">Web Design</div>
+         </div>
+     </div>
+ </div>
+ <div class="card" data-aos="fade-right">
+  <div class="image">
+      <img src="./Image 3.jpg" style="height: 220px; width: 320px;">
+      <div class="overlay">
+          <div class="overlay-content">Web Design</div>
+      </div>
+  </div>
+</div>
+<div class="card" data-aos="fade-left">
+<div class="image">
+   <img src="./image 6.jpg" style="height: 220px; width: 320px;">
+   <div class="overlay">
+       <div class="overlay-content">Web Design</div>
+   </div>
+</div>
+</div>
+<div class="card">
+<div class="image">
+   <img src="./Image 5.jpg" style="height: 220px; width: 320px;">
+   <div class="overlay">
+       <div class="overlay-content">Web Design</div>
+   </div>
+</div>
+</div>
+</div>
+<h1 style="text-align: center; color: #8e13e0; text-shadow: 0 5px 10px rgba(22, 26, 245, 0.2);  font-size: 50px; font-weight: bold;" data-aos="fade-left">Contact Me</h1>
+<div class="cont" id="Contact" data-aos="fade-down-left">
+    <div class="contact">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address</div>
+          <div class="text-one">Near Ghallah Mandi House No 371 Mohallah Hakiman Wala Khairpur Tamewali Destrict Bahawalpur</div>
+         
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">+923096867166</div>
+      
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">mh6467419@gmail.com</div>
+      
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Send us a message</div>
+        <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from here. It's my pleasure to help you.</p>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Enter your name">
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="Enter your email">
+        </div>
+        <div class="input-box message-box">
+            <input type="textarea" placeholder="Enter your Message">
+        </div>
+        <div class="button">
+          <input type="button" value="Send Now" >
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
+ <footer data-aos= "fade-up-right">
+    <div class="footer-content" style="height: 250px;">
+        <h3>Web Developer</h3>
+        <p>Join our team as a frontend developer and be part of creating captivating user experiences. You'll collaborate with design and backend teams to implement polished interfaces using HTML, CSS, and JavaScript.</p>
+        <ul class="socials">
+            <li><a href="https://wa.me/03096867166"><i class="fa-brands fa-whatsapp"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/muhammad-hassan-ali-742205243/"><i class="fa-brands fa-linkedin"></i></a></li>
+        
+        </ul>
+    </div>
+
+    
+
+</footer>
+
+
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+     </script>
+       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+       <script>
+         AOS.init({
+          offset: 150,
+          duration: 600,
+          delay: 0,
+          easing: 'ease',
+  once: false, 
+  mirror: false, 
+  anchorPlacement: 'top-bottom',
+         }
+          
+         );
+       </script>
+</body>
+</html>

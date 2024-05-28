@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="Login.css">
+</head>
+
+<body>
+
+    <section class="container"  data-aos="fade-right">
+        <h2>Login Form</h2>
+        <form class="form" onsubmit="return validateForm(event)">
+            <label for="username"><span>UserName</span></label>
+            <input type="text" id="username" name="username">
+
+            <label for="email"><span>Email</span></label>
+            <input type="email" id="email" name="email">
+
+            <label for="password"><span>Password</span></label>
+            <input type="password" id="password" name="password">
+
+            <label for="retypepassword"><span>Re-Type Password</span></label>
+            <input type="password" id="retypepassword" name="retypepassword">
+
+            <button type="submit">Login</button>
+        </form>
+
+        <p class="newUser">
+            Not a member? <span><a href="./Signup.html">SignUp Now</a></span>
+        </p>
+    </section>
+
+    <script>
+        function validateForm(event) {
+            var UserName = document.getElementById("username").value;
+            var Password = document.getElementById("password").value;
+            var Email = document.getElementById("email").value;
+            var RePassword = document.getElementById("retypepassword").value;
+
+            if (UserName === "" || Password === "" || Email === "" || RePassword === "") {
+                alert("Please enter valid data in all fields.");
+                return false;
+            }
+
+            if (Password.length < 8) {
+                alert("Password must be at least 8 characters long.");
+                return false;
+            }
+
+            if (Password !== RePassword) {
+                alert("Passwords do not match.");
+                return false;
+            }
+
+            alert("Login Successfully");
+            return true; 
+        }
+    </script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+       AOS.init({
+        offset: 150,
+        duration: 600,
+        delay: 0,
+        easing: 'ease',
+once: false, 
+mirror: false, 
+anchorPlacement: 'top-bottom',
+       }
+        
+       );
+     </script>
+
+</body>
+</html>
